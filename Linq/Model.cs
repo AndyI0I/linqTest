@@ -12,16 +12,14 @@ namespace Linq
     {
         public DbSet<Mitarbeiter> Mitarbeiter { get; set; } 
 
-        public string DbPath { get; }
+   
 
         public MitarbeiterContext()
         {
-            var folder = Environment.SpecialFolder.LocalApplicationData;
-            var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "Mitarbeiter.db");
+           
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer($"Data Source={DbPath}");
+        => options.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\csharp\linqTest\Linq\Mitarbeiter.mdf;Integrated Security=True");
     }
 }

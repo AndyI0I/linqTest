@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Linq;
+using System;
 
 
 namespace Programm
@@ -44,11 +45,41 @@ namespace Programm
         }
 
 
+        public void DBTest()
+        {
+            using var db = new MitarbeiterContext();
+
+            // Note: This sample requires the database to be created before running.
+        
+
+            // Create
+            Console.WriteLine("Inserting a new Mitarbeiter");
+            db.Add(new Mitarbeiter(123, "Max", "Muster", DateTime.Now));
+            db.SaveChanges();
+
+            // Read
+            Console.WriteLine("Querying for a Mitarbeiter");
+            var mitarbeiter = db.Mitarbeiter
+                .OrderBy(b => b.PersonalNummer)
+                .First();
+
+            // Update
+            Console.WriteLine("Updating the Mitarbeiter");
+            mitarbeiter.Nachname = "Felder";
+            db.SaveChanges();
+
+            // Delete
+            Console.WriteLine("Delete the Mitarbeiter");
+            db.Remove(mitarbeiter);
+            db.SaveChanges();
+        }
+
 
         public static void Main(string[] vs)
         {
             MainApp mainApp = new();
-            mainApp.run();
+            //mainApp.run();
+            mainApp.DBTest();
         }
     }
 }
