@@ -48,7 +48,6 @@ namespace Programm
         public static void Main(string[] vs)
         {
             MainApp mainApp = new();
-
             mainApp.run();
         }
     }
