@@ -1,0 +1,15 @@
+C:\csharp\linqTest\Linq\bin\Debug\net6.0\Linq.exe
+C:\csharp\linqTest\Linq\bin\Debug\net6.0\Linq.deps.json
+C:\csharp\linqTest\Linq\bin\Debug\net6.0\Linq.runtimeconfig.json
+C:\csharp\linqTest\Linq\bin\Debug\net6.0\Linq.dll
+C:\csharp\linqTest\Linq\bin\Debug\net6.0\Linq.pdb
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.csproj.AssemblyReference.cache
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.AssemblyInfoInputs.cache
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.AssemblyInfo.cs
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.csproj.CoreCompileInputs.cache
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.dll
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\refint\Linq.dll
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.pdb
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\Linq.genruntimeconfig.cache
+C:\csharp\linqTest\Linq\obj\Debug\net6.0\ref\Linq.dll

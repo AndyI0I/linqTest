@@ -9,7 +9,24 @@ namespace Programm
 
         public void run()
         {
-            
+            List<Mitarbeiter> mitarbeiters = new List<Mitarbeiter>();
+            mitarbeiters.Add(new Mitarbeiter(123, "Andreas", "Felder", DateTime.Now));
+            mitarbeiters.Add(new Mitarbeiter(124, "Max", "Muster", DateTime.Now));
+            mitarbeiters.Add(new Mitarbeiter(124, "John", "Doe", DateTime.Now));
+
+            var MitQuery =
+                from mit in mitarbeiters
+                where mit.Vorname.Trim().StartsWith("A")
+                select mit;
+
+            foreach (Mitarbeiter mit in MitQuery)
+            {
+                Console.WriteLine("Mitarbeiter");
+                Console.WriteLine("\tPersonalnummer: " + mit.PersonalNummer);
+                Console.WriteLine("\tVorname: " + mit.Vorname);
+                Console.WriteLine("\tNachname: " + mit.Nachname);
+                Console.WriteLine("\tEintrittsdatum: " + mit.Eintrittsdatum);
+            }
         }
 
 
