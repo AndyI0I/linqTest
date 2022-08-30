@@ -54,7 +54,7 @@ namespace Programm
 
             // Create
             Console.WriteLine("Inserting a new Mitarbeiter");
-            db.Add(new Mitarbeiter(123, "Max", "Muster", DateTime.Now));
+                db.Add(new Mitarbeiter(125, "Max", "Muster", DateTime.Now));
             db.SaveChanges();
 
             // Read
